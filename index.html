@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Doller Men's Salon in Kondapur, Hyderabad. Haircuts, styling and grooming services. Open 10 AM to 10 PM.">
+  <title>Doller Men's Salon | Kondapur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b0d;--card:#151518;--gold:#d8b36a;--text:#f7f5ef;--muted:#b8b5ae}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,11,13,.92);backdrop-filter:blur(12px);border-bottom:1px solid #252529}
+    .nav-inner{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:1px}
+    .logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:24px;color:#ddd;font-size:14px}
+    .nav-links a:hover{color:var(--gold)}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:70px 20px;background:
+      linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.82)),
+      url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1800&q=85") center/cover}
+    .eyebrow{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(48px,9vw,86px);line-height:1.02;margin-bottom:18px}
+    .hero p{max-width:650px;margin:0 auto 28px;color:#ddd;font-size:17px}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 22px;border-radius:999px;font-weight:700;font-size:14px;display:inline-block}
+    .primary{background:var(--gold);color:#111}
+    .secondary{border:1px solid #777;color:white}
+    section{max-width:1100px;margin:auto;padding:75px 20px}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title h2{font-family:"Playfair Display",serif;font-size:40px}
+    .section-title p{color:var(--muted);margin-top:8px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:var(--card);padding:28px;border:1px solid #27272c;border-radius:18px}
+    .service .icon{font-size:28px;margin-bottom:12px}
+    .service h3{font-size:19px;margin-bottom:8px}
+    .service p{color:var(--muted);font-size:14px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery img{width:100%;height:300px;object-fit:cover;border-radius:16px;border:1px solid #27272c}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about-img{width:100%;height:440px;object-fit:cover;border-radius:22px}
+    .about h2{font-family:"Playfair Display",serif;font-size:40px;margin-bottom:14px}
+    .about p{color:var(--muted);margin-bottom:18px}
+    .info{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}
+    .info-card{background:var(--card);padding:20px;border-radius:16px;border:1px solid #27272c}
+    .info-card strong{display:block;color:var(--gold);margin-bottom:4px}
+    .cta{text-align:center;background:linear-gradient(135deg,#171719,#0e0e10);border:1px solid #2b2b30;border-radius:24px;padding:55px 20px}
+    .cta h2{font-family:"Playfair Display",serif;font-size:42px;margin-bottom:10px}
+    .cta p{color:var(--muted);margin-bottom:25px}
+    footer{border-top:1px solid #252529;text-align:center;padding:28px 20px;color:#999;font-size:13px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#071b0d;padding:13px 18px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #0008}
+    @media(max-width:760px){
+      .nav-links{display:none}
+      .services,.gallery,.about,.info{grid-template-columns:1fr}
+      .gallery img{height:260px}
+      .about-img{height:320px}
+      section{padding:55px 18px}
+      .hero{min-height:75vh}
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#home">DOLLER<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Men's Grooming • Kondapur</div>
+      <h1>Look Sharp.<br>Feel Confident.</h1>
+      <p>Premium men's grooming in Kondapur. Fresh cuts, clean styling and a look that fits you.</p>
+      <div class="buttons">
+        <a class="btn primary" href="tel:+919573406481">Call Now</a>
+        <a class="btn secondary" href="https://wa.me/919573406481?text=Hi%20Doller%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Professional grooming for your everyday look.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="icon">✂️</div><h3>Haircut & Styling</h3><p>Classic, modern and personalised hairstyles by our team.</p></article>
+      <article class="service"><div class="icon">🪒</div><h3>Beard Grooming</h3><p>Clean trims, shaping and styling for a sharp finish.</p></article>
+      <article class="service"><div class="icon">✨</div><h3>Hair & Skin Care</h3><p>Grooming and care services designed to keep you looking fresh.</p></article>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-title">
+      <h2>Style Gallery</h2>
+      <p>Sample hairstyle imagery for the website demo.</p>
+    </div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85" alt="Men's hairstyle">
+      <img src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed4?auto=format&fit=crop&w=900&q=85" alt="Men's haircut">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85" alt="Barber styling">
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <img class="about-img" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=85" alt="Men's salon styling">
+      <div>
+        <div class="eyebrow">About Doller</div>
+        <h2>Your local grooming spot.</h2>
+        <p>Doller is a men's salon serving customers around Kondapur, Hyderabad. Drop in for a fresh cut, beard grooming or a complete style refresh.</p>
+        <div class="info">
+          <div class="info-card"><strong>Hours</strong>10 AM – 10 PM</div>
+          <div class="info-card"><strong>Location</strong>Kondapur</div>
+          <div class="info-card"><strong>Bookings</strong>Call / WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="cta">
+      <div class="eyebrow">Visit Doller</div>
+      <h2>Ready for a fresh look?</h2>
+      <p>Beside Hyundai Showroom, Kondapur • Open daily 10 AM – 10 PM</p>
+      <div class="buttons">
+        <a class="btn primary" href="tel:+919573406481">95734 06481</a>
+        <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Doller+Men%27s+Salon+Kondapur+Hyderabad">Get Directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float" href="https://wa.me/919573406481?text=Hi%20Doller%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+
+<footer>
+  © 2026 Doller Men's Salon • Kondapur, Hyderabad
+</footer>
+</body>
+</html>
